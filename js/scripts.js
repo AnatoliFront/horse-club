@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
        
         new Promise((res, rej) => {
-                console.log(qs('.form_loader'));
                 qs('.form_loader').classList.add('active');
                 setTimeout(() => res(true), 2000) 
             }).then(result => {
@@ -51,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     var phoneInput = qs('.form-control.phone-input');
-    console.log(phoneInput);
     IMask(
         phoneInput,
         {

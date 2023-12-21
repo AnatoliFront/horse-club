@@ -74,4 +74,25 @@ document.addEventListener('DOMContentLoaded', function() {
     phoneInput.oninput = function() { 
         this.setCustomValidity(''); 
     }    
+
+
+    if (qs('.reviews')) {
+        new Splide( '.reviews', {
+            type: 'loop',
+            perPage: 4,
+            perMove: 1,
+            gap: 20,
+            breakpoints: {
+                720: {
+                    perPage: 3,
+                },
+                540: {
+                    perPage: 2,
+                },
+                420: {
+                    perPage: 1,
+                },
+          }
+        }).mount();
+    }
 })

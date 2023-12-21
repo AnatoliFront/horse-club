@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://unpkg.com/imask"></script>
+    <script src="https://unpkg.com/imask"></script>\
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <title>Отзывы</title>
 </head>
 
@@ -55,7 +57,25 @@
     </header>
     <main class="main">
         <div class="wrapper">
-            <div class="reviews">
+            <section class="splide reviews" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide review">
+                            <img src="./assets/images/inst_1.png" alt="">
+                          </li>
+                          <li class="splide__slide review">
+                            <img src="./assets/images/inst_2.png" alt="">
+                          </li>
+                          <li class="splide__slide review">
+                            <img src="./assets/images/inst_3.png" alt="">
+                          </li>
+                          <li class="splide__slide review">
+                            <img src="./assets/images/inst_4.png" alt="">
+                          </li>
+                      </ul>
+                </div>
+            </section>
+            <!-- <div class="reviews">
                 <div class="review">
                     <img src="./assets/images/inst_1.png" alt="">
                 </div>
@@ -68,7 +88,7 @@
                 <div class="review">
                     <img src="./assets/images/inst_4.png" alt="">
                 </div>
-            </div>
+            </div> -->
         </div>
     </main>
     <footer class="footer">

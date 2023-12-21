@@ -48,21 +48,21 @@ a {
 
 @font-face {
     font-family: Rubik;
-    src: url(/assets/fonts/Rubik/Rubik-Regular.ttf);
+    src: url("./assets/fonts/Rubik/Rubik-Regular.ttf");
     font-weight: 400;
     font-variant: normal;
 }
 
 @font-face {
     font-family: Rubik;
-    src: url(/assets/fonts/Rubik/Rubik-Bold.ttf);
+    src: url("./assets/fonts/Rubik/Rubik-Bold.ttf");
     font-weight: 700;
     font-variant: bold;
 }
 
 @font-face {
     font-family: Rubik;
-    src: url(/assets/fonts/Rubik/Rubik-Light.ttf);
+    src: url("./assets/fonts/Rubik/Rubik-Light.ttf");
     font-weight: 200;
     font-variant: lighter;
 }
@@ -277,7 +277,7 @@ body {
 .main_banner {
     width: 100%;
     height: 600px;
-    background-image: url('/assets/images/main_banner.png');
+    background-image: url("./assets/images/main_banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -664,7 +664,7 @@ body.modal-open .modal_window {
 }
 
 @media screen and (max-width: 720px) {
-    button.burger-button {
+    .burger-button {
         display: block;
     }
 

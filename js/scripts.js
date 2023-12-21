@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         new Promise((res, rej) => {
                 console.log(qs('.form_loader'));
                 qs('.form_loader').classList.add('active');
-                setTimeout(() => res(false), 3000) 
+                setTimeout(() => res(true), 2000) 
             }).then(result => {
                 qs('.form_loader').classList.remove('active');
                 if (result) {
